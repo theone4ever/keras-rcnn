@@ -2,9 +2,6 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "items": {
         "properties": {
-            "id": {
-                "type": "string"
-            },
             "image": {
                 "properties": {
                     "checksum": {
@@ -51,6 +48,9 @@
                         },
                         "mask": {
                             "properties": {
+                                "checksum": {
+                                    "type": "string"
+                                },
                                 "pathname": {
                                     "type": [
                                         "null",
