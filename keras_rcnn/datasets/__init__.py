@@ -45,6 +45,6 @@ def get_file_data(json_pathname, images_pathname, masks_pathname=None):
 
         if masks_pathname:
             for index, instance in enumerate(dictionary["objects"]):
-                dictionary["objects"][index]["mask"]["pathname"] = os.path.join(images_pathname, dictionary["objects"][index]["mask"]["pathname"])
+                dictionary["objects"][index]["mask"]["pathname"] = os.path.join(masks_pathname, dictionary["objects"][index]["mask"]["pathname"])
 
     return dictionaries
