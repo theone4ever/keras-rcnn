@@ -3,11 +3,13 @@ import sklearn
 import keras
 import numpy
 import matplotlib
-import keras_rcnn.datasets.malaria
+import keras_rcnn.datasets.dsb2018
+from sklearn.model_selection import train_test_split
+from keras_rcnn.preprocessing import ObjectDetectionGenerator
 
 from keras_rcnn.layers import RPN
 
-training, test = keras_rcnn.datasets.malaria.load_data()
+training, test = keras_rcnn.datasets.dsb2018.load_data()
 
 training, validation = sklearn.model_selection.train_test_split(training)
 
