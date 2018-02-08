@@ -1,1 +1,2 @@
+from ._image_segmentation import ImageSegmentationGenerator
 from ._object_detection import ObjectDetectionGenerator
